@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1059111133324",
+    "firebase_url": "https://event-app-faae0-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "event-app-faae0",
+    "storage_bucket": "event-app-faae0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059111133324:android:5dcc9ef5fd1c66d1e3dba9",
+        "android_client_info": {
+          "package_name": "com.dhidroid.event"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrL2YUh5ts_UFgPXEYISxi_be6zhUaStM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

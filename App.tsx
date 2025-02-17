@@ -22,11 +22,12 @@ const App = () => {
         {isSplash ? (
           <Stack.Group>
             <Stack.Screen name="Splash" component={SplashScreen} />
-            <Stack.Screen name="onboarding" component={OnBoradingScreen} />
+
           </Stack.Group>
         ) : (
           <Stack.Group>
-            <Stack.Screen name="Home" component={SplashScreen} />
+            <Stack.Screen name="onboarding" component={OnBoradingScreen} />
+            <Stack.Screen name="Home" component={HomeScreen} />
           </Stack.Group>
         )}
       </Stack.Navigator>
