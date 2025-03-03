@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "821180289473",
+    "project_id": "dhievent",
+    "storage_bucket": "dhievent.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821180289473:android:a987c20fd32393ce225f40",
+        "android_client_info": {
+          "package_name": "com.dhievent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821180289473-8k3bpqml5pendt54eipe017e7784o96l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhievent",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "821180289473-lp8thkim8m9b2f270bovblfm0cf9crgh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhievent",
+            "certificate_hash": "c40208eff7a2fc09b88c9d9e242511fbb356b39a"
+          }
+        },
+        {
+          "client_id": "821180289473-fgsodmflb3uqg5hfvf9u9nf40nrbbu2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTyfk41M00vLfHrjBwDele0CjkRAKzGmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821180289473-fgsodmflb3uqg5hfvf9u9nf40nrbbu2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
