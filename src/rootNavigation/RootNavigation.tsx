@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from '../screens/Homescreen/HomeScreen';
 import LetsStartScreen from '../screens/Splash/LetsStartScreen';
 import Splash from '../screens/Splash/Splash';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,12 +20,24 @@ const RootNavigation = () => {
     );
 };
 
-
 const SplashScreen = ({ navigation }) => {
     useEffect(() => {
-        setTimeout(() => {
-            navigation.replace('LetStart');
-        }, 1000);
+        const checkToken = async () => {
+            try {
+                const token = await AsyncStorage.getItem('idtoken');
+                console.log("token", token);
+                if (token) {
+                    navigation.replace('Home');
+                } else {
+                    navigation.replace('LetStart');
+                }
+            } catch (error) {
+                console.error('Error retrieving token:', error);
+                navigation.replace('LetStart');
+            }
+        };
+
+        setTimeout(checkToken, 1000);
     }, [navigation]);
 
     return <Splash />;

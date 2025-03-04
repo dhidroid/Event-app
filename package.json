@@ -15,6 +15,7 @@
     "@react-native-community/geolocation": "^3.4.0",
     "@react-native-firebase/app": "^21.11.0",
     "@react-native-firebase/auth": "^21.11.0",
+    "@react-native-firebase/database": "^21.12.0",
     "@react-native-google-signin/google-signin": "^13.2.0",
     "@react-navigation/elements": "^2.2.6",
     "@react-navigation/native": "^7.0.15",
@@ -26,6 +27,8 @@
     "react-native-modal": "^13.0.1",
     "react-native-safe-area-context": "^5.2.0",
     "react-native-screens": "^4.9.1",
+    "react-native-svg": "^15.11.2",
+    "react-native-svg-transformer": "^1.5.0",
     "react-native-vector-icons": "^10.2.0",
     "react-native-video": "^6.10.2"
   },
@@ -51,5 +54,10 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.svg": "<rootDir>/__mocks__/svgMock.js"
+    }
   }
 }

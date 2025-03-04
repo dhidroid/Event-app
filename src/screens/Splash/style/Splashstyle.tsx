@@ -25,6 +25,7 @@ export const SplashStyle = StyleSheet.create({
         position: 'absolute',
         bottom: 50,
         alignSelf: 'center',
+        paddingHorizontal: 16
     },
     title: {
         color: 'white',
