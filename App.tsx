@@ -1,7 +1,6 @@
 import { StatusBar } from 'react-native';
 import RootNavigation from './src/rootNavigation/RootNavigation';
 import React from 'react';
-
 const App = () => {
   return (
     <React.Fragment>

@@ -1,4 +1,4 @@
-import {initializeApp, getApps, getApp} from '@react-native-firebase/app';
+import firebase, {getApp, getApps} from '@react-native-firebase/app';
 const firebaseConfig = {
   apiKey: 'AIzaSyAvmlXjMLy1eEbcliyDWcyBWIMcFqz2rPE',
   authDomain: 'dhievent.firebaseapp.com',
@@ -10,6 +10,6 @@ const firebaseConfig = {
 };
 
 // Ensure Firebase is initialized only once
-const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
-export default firebaseApp;
+getApps() ? getApp() : firebase.initializeApp(firebaseConfig);

@@ -5,6 +5,7 @@ import HomeScreen from '../screens/Homescreen/HomeScreen';
 import LetsStartScreen from '../screens/Splash/LetsStartScreen';
 import Splash from '../screens/Splash/Splash';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import CreateEventScreen from '../screens/createEvent/CreateEventScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ const RootNavigation = () => {
                 <Stack.Screen name="Splash" component={SplashScreen} />
                 <Stack.Screen name="LetStart" component={LetsStartScreen} />
                 <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Create" component={CreateEventScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

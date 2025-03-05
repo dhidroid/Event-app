@@ -50,9 +50,9 @@ const LetsStartScreen = () => {
             };
 
             // Store user data in Firebase Realtime Database
-            // await database()
-            //     .ref(`/users/${user.uid}`)
-            //     .set(userData).then(() => console.log("data stored successfully!"));
+            await database()
+                .ref(`/users/${user.uid}`)
+                .set(userData).then(() => console.log("data stored successfully!"));
 
 
 

@@ -11,10 +11,15 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import LinearGradient from 'react-native-linear-gradient';
 import TopTabNavigator from '../../compoents/TopTab/TopTab';
 import { NoData } from '../../../assets/index'
+import RNCreateButton from '../../compoents/button/RNCreateButton';
+import { useNavigation } from '@react-navigation/native';
+
+
+
 const HomeScreen = () => {
     const [screenIndex, setScreenIndex] = React.useState<number>(1);
     const [data, setData] = React.useState([]);
-
+    const navigation = useNavigation();
     const sliderData = [
         { id: 1, Name: "Upcoming" },
         { id: 2, Name: "Past" }
@@ -55,6 +60,10 @@ const HomeScreen = () => {
                             }}>
                                 <NoData height={250} fill={"black"} />
                                 <Text>No Upcoming Events</Text>
+
+                                <View>
+                                    <RNCreateButton title={"Create Event"} onPress={() => navigation.navigate("Create")} />
+                                </View>
                             </View>
                         ) : (null)}
 
@@ -73,7 +82,7 @@ const HomeScreen = () => {
 
     return (
         <LinearGradient
-            colors={['rgba(87, 89, 246, 0.25)', 'rgba(255, 255, 255, 0)']}
+            colors={['rgba(87, 89, 246, 0.25)', 'rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0)']}
             style={styles.container}
         >
             {/* Top Header */}
@@ -140,7 +149,8 @@ const styles = StyleSheet.create({
     title: {
         fontWeight: "700",
         color: "black",
-        fontSize: 30,
+        fontSize: 25,
+        flex: 1
     },
     screenContainer: {
         // marginTop: 20,
